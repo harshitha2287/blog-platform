@@ -21,7 +21,7 @@ function CreatePost() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        "http://localhost:5000/api/posts",
+        "https://blog-platform-pql9.onrender.com/api/posts",
         {
           title,
           content,

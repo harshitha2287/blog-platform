@@ -25,7 +25,7 @@ function Home() {
       setLoading(true);
 
       const res = await axios.get(
-        "http://localhost:5000/api/posts"
+        "https://blog-platform-pql9.onrender.com/api/posts"
       );
 
       setPosts(res.data);
@@ -50,9 +50,7 @@ function Home() {
 
     return (
       <div className="container">
-
         <h2>Loading posts...</h2>
-
       </div>
     );
   }
@@ -79,9 +77,7 @@ function Home() {
       {filteredPosts.length === 0 ? (
 
         <div className="form-container">
-
           <h3>No posts found</h3>
-
         </div>
 
       ) : (

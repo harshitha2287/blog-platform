@@ -28,7 +28,7 @@ function EditPost() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/posts/${id}`
+        `https://blog-platform-pql9.onrender.com/api/posts/${id}`
       );
 
       setTitle(res.data.title);
@@ -50,7 +50,7 @@ function EditPost() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/posts/${id}`,
+        `https://blog-platform-pql9.onrender.com/api/posts/${id}`,
         {
           title,
           content,

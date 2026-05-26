@@ -21,7 +21,7 @@ function Register() {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://blog-platform-pql9.onrender.com",
         {
           username,
           email,

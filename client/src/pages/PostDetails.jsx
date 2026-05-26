@@ -27,7 +27,7 @@ function PostDetails() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/posts/${id}`
+        `https://blog-platform-pql9.onrender.com/api/posts/${id}`
       );
 
       setPost(res.data);
@@ -43,7 +43,7 @@ function PostDetails() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/comments/${id}`
+        `https://blog-platform-pql9.onrender.com/api/comments/${id}`
       );
 
       setComments(res.data);
@@ -63,7 +63,7 @@ function PostDetails() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        `http://localhost:5000/api/comments/${id}`,
+        `https://blog-platform-pql9.onrender.com/api/comments/${id}`,
         {
           text,
         },
