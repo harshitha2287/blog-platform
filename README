@@ -1,0 +1,55 @@
+# ✨ BlogSphere
+
+A full-stack MERN blogging platform with authentication and comments.
+
+## Live Demo
+
+Frontend:
+YOUR_VERCEL_LINK
+
+Backend:
+YOUR_RENDER_LINK
+
+## Features
+
+- User Authentication
+- JWT Authorization
+- Create/Edit/Delete Posts
+- Comment System
+- Search Functionality
+- Responsive UI
+- Dark Mode
+- Dashboard
+- Protected Routes
+
+## Tech Stack
+
+### Frontend
+- React
+- React Router
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- JWT
+
+## Installation
+
+### Backend
+
+cd server
+
+npm install
+
+npm run dev
+
+### Frontend
+
+cd client
+
+npm install
+
+npm run dev
+

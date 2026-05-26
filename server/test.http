@@ -1,0 +1,36 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "harshitha",
+  "email": "test@test.com",
+  "password": "123456"
+}
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTUzZWRiNzRkZjVmOWE5ODE2ZTYxOSIsImlhdCI6MTc3OTc3NzY0NiwiZXhwIjoxNzgwMzgyNDQ2fQ.FNLMqylBBh6yulRruZhBiN9pIJg468GUBral0Xl18dM
+
+{
+  "title": "My First Blog",
+  "content": "This is my first blog post"
+}
+###
+GET http://localhost:5000/api/posts
+###
+POST http://localhost:5000/api/comments/6a15429a19c358849a9add96
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMTUzZWRiNzRkZjVmOWE5ODE2ZTYxOSIsImlhdCI6MTc3OTc3NzY0NiwiZXhwIjoxNzgwMzgyNDQ2fQ.FNLMqylBBh6yulRruZhBiN9pIJg468GUBral0Xl18dM
+
+{
+  "text": "Nice blog!"
+}
